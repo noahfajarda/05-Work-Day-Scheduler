@@ -23,92 +23,79 @@
         <h1 class="display-3">Work Day Scheduler</h1>
         <p class="lead">A simple calendar app for scheduling your work day</p>
         <p id="currentDay" class="lead"></p>
+        <p id="currentTime" class="lead"></p>
         <p id="textUponSave">...</p>
     </header>
-    <div class="container">
+    <main class="container">
+        <div id="clearContainer" class="slide-up">
+            <button id="clear">Clear</button>
+        </div>
         <!-- 9am -->
-        <div class="time-block row">
+        <div class="time-block row slide-up">
             <div class="col-md-1 hour">9AM
             </div>
-            <textarea name="save" id="9" class="col-11 col-sm-11 col-md-10"></textarea>
-            <div class="saveBtn col-1">
-                Save
-            </div>
+            <textarea name="save" id="9" class="col-9 col-md-10 col-sm-9"></textarea>
+            <div class="saveBtn col-3 col-md-1 col-sm-3 col-xs-3">Save</div>
         </div>
         <!-- 10am -->
-        <div class="time-block row">
+        <div class="time-block row slide-up">
             <div class="col-md-1 hour">10AM
             </div>
-            <textarea name="save" id="10" class="col-11 col-sm-11 col-md-10"></textarea>
-            <div class="saveBtn col-1">
-                Save
-            </div>
+            <textarea name="save" id="10" class="col-9 col-md-10 col-sm-9"></textarea>
+            <div class="saveBtn col-3 col-md-1 col-sm-3 col-xs-3">Save</div>
         </div>
         <!-- 11am -->
-        <div class="time-block row">
+        <div class="time-block row slide-up">
             <div class="col-md-1 hour">11AM
             </div>
-            <textarea name="save" id="11" class="col-11 col-sm-11 col-md-10"></textarea>
-            <div class="saveBtn col-1">
-                Save
-            </div>
+            <textarea name="save" id="11" class="col-9 col-md-10 col-sm-9"></textarea>
+            <div class="saveBtn col-3 col-md-1 col-sm-3 col-xs-3">Save</div>
         </div>
         <!-- 12am -->
-        <div class="time-block row">
+        <div class="time-block row slide-up">
             <div class="col-md-1 hour">12PM
             </div>
-            <textarea name="save" id="12" class="col-11 col-sm-11 col-md-10"></textarea>
-            <div class="saveBtn col-1">
-                Save
-            </div>
+            <textarea name="save" id="12" class="col-9 col-md-10 col-sm-9"></textarea>
+            <div class="saveBtn col-3 col-md-1 col-sm-3 col-xs-3">Save</div>
         </div>
         <!-- 1pm -->
-        <div class="time-block row">
+        <div class="time-block row slide-up">
             <div class="col-md-1 hour">1PM
             </div>
-            <textarea name="save" id="13" class="col-11 col-sm-11 col-md-10"></textarea>
-            <div class="saveBtn col-1">
-                Save
-            </div>
+            <textarea name="save" id="13" class="col-9 col-md-10 col-sm-9"></textarea>
+            <div class="saveBtn col-3 col-md-1 col-sm-3 col-xs-3">Save</div>
         </div>
         <!-- 2pm -->
-        <div class="time-block row">
+        <div class="time-block row slide-up">
             <div class="col-md-1 hour">2PM
             </div>
-            <textarea name="save" id="14" class="col-11 col-sm-11 col-md-10"></textarea>
-            <div class="saveBtn col-1">
-                Save
-            </div>
+            <textarea name="save" id="14" class="col-9 col-md-10 col-sm-9"></textarea>
+            <div class="saveBtn col-3 col-md-1 col-sm-3 col-xs-3">Save</div>
         </div>
         <!-- 3pm -->
-        <div class="time-block row">
+        <div class="time-block row slide-up">
             <div class="col-md-1 hour">3PM
             </div>
-            <textarea name="save" id="15" class="col-11 col-sm-11 col-md-10"></textarea>
-            <div class="saveBtn col-1">
-                Save
-            </div>
+            <textarea name="save" id="15" class="col-9 col-md-10 col-sm-9"></textarea>
+            <div class="saveBtn col-3 col-md-1 col-sm-3 col-xs-3">Save</div>
         </div>
         <!-- 4am -->
-        <div class="time-block row">
+        <div class="time-block row slide-up">
             <div class="col-md-1 hour">4PM
             </div>
-            <textarea name="save" id="16" class="col-11 col-sm-11 col-md-10"></textarea>
-            <div class="saveBtn col-1">
-                Save
-            </div>
+            <textarea name="save" id="16" class="col-9 col-md-10 col-sm-9"></textarea>
+            <div class="saveBtn col-3 col-md-1 col-sm-3 col-xs-3">Save</div>
         </div>
         <!-- 5am -->
-        <div class="time-block row">
+        <div class="time-block row slide-up">
             <div class="col-md-1 hour">5PM
             </div>
-            <textarea name="save" id="17" class="col-11 col-sm-11 col-md-10"></textarea>
-            <div class="saveBtn col-1">
-                Save
-            </div>
+            <textarea name="save" id="17" class="col-9 col-md-10 col-sm-9"></textarea>
+            <div class="saveBtn col-3 col-md-1 col-sm-3 col-xs-3">Save</div>
         </div>
         <!-- Timeblocks go here -->
-    </div>
+    </main>
+    <footer></footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>

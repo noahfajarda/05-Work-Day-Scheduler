@@ -1,5 +1,6 @@
 // Select elements
 var currentDay = $('#currentDay');
+var currentTime = $('#currentTime');
 var today = moment();
 var hourToday = Number(today.format("H"));
 var hourEl;
@@ -8,12 +9,20 @@ var currentTextArea;
 var elementID;
 var retrievedText;
 var textUponSave = $('#textUponSave');
+var clearBtn = $('#clear');
 
 // initiate list of hours
 var hourList = [9, 10, 11, 12, 13, 14, 15, 16, 17];
 
-// Set text of current day
+// Set text of current day & time
 currentDay.text(today.format("dddd, MMMM Do, YYYY"));
+$(document).ready(function() {
+    currentTime.text(today.format("h:mm:ss A"));
+    setInterval(function() {
+        today = moment();
+        currentTime.text(today.format("h:mm:ss A"));
+    }, 1000);
+});
 
 // WE DOING MILITARY TIME
 for (var i in hourList) {
@@ -45,6 +54,28 @@ saveButtons.on('click', function(event) {
 
     // display 'SAVED' text in header upon save
     textUponSave.css({'opacity': '1'}).text('SAVED!');
+    var secondsLeft = 2;
+    var timerInterval = setInterval(function() {
+        secondsLeft--;
+        if (secondsLeft === 0) {
+            clearInterval(timerInterval);
+            textUponSave.css('opacity', '0');
+        }
+    }, 1000);
+});
+
+// event listener for clear button
+clearBtn.on('click', function(event) {
+    // clear items in local storage & update display
+    localStorage.clear();
+    for (var i in hourList) {
+        hourEl = $('#' + hourList[i]);
+        console.log(hourList[i]);
+        hourEl.text("");
+    }
+
+    // 'CLEARED' text displayed
+    textUponSave.css({'opacity': '1'}).text('CLEARED!');
     var secondsLeft = 2;
     var timerInterval = setInterval(function() {
         secondsLeft--;

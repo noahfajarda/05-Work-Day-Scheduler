@@ -8,13 +8,17 @@ body {
 	animation: gradient 20s ease infinite;
 	height: 100vh;
 }
+
+footer {
+    padding: 10px;
+}
+
 /* use */
 textarea {
     background: transparent;
     border: none;
     resize: none;
     color: #000000;
-    border-left: 1px solid black;
     padding: 10px;
 }
 
@@ -25,11 +29,17 @@ textarea {
     border-radius: 0;
     border-bottom: 10px solid black;
     padding-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .jumbotron h1 {
     text-shadow: 2px 2px white;
     margin-bottom: 15px;
+}
+
+#currentTime {
+    font-size: 40px;
+    font-family: sans-serif;
 }
 /* use */
 .description {
@@ -39,6 +49,7 @@ textarea {
 .time-block {
     text-align: center;
     border-radius: 15px;
+    border-bottom: 2px solid black;
 }
 
 .row {
@@ -51,7 +62,6 @@ textarea {
     background-color: #ffffff;
     font-family: 'Open Sans', sans-serif;
     color: #000000;
-    border-top: 1px dashed #000000;
     padding-top: 30px;
 }
 
@@ -71,10 +81,10 @@ textarea {
 }
 
 .saveBtn {
-    border-left: 1px solid black;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     background-color: #06aed5;
+    padding-top: 32px;
     color: white;
     cursor: pointer;
 }
@@ -82,6 +92,19 @@ textarea {
 .saveBtn i:hover {
     font-size: 20px;
     transition: all 0.3s ease-in-out;
+}
+
+#clearContainer {
+    align-items: center;
+    text-align: center;
+}
+
+#clear {
+    padding: 10px 100px;
+    margin: 10px;
+    border-radius: 200px;
+    color: white;
+    background-color: black;
 }
 
 #textUponSave {
@@ -93,6 +116,24 @@ textarea {
     opacity: 0;
     font-family: 'Raleway', sans-serif;
     transition: 1s opacity;
+}
+
+div.slide-up {
+    /* height:200px; */
+    overflow:hidden;
+    animation: 3s slide-up;
+    margin-top:0%;
+    margin-bottom: 10px;
+  }
+
+@keyframes slide-up {
+from {
+    margin-top: 100%;
+}
+
+to {
+    margin-top: 0%;
+}
 }
 
 /* fade background animation */
@@ -114,7 +155,10 @@ textarea {
         margin-bottom: 32px;
     }
     .saveBtn {
-        padding: 0px;
+        padding-top: 30px;
+        border-radius: 0px;
+        text-align: center;
+        font-size: 30px;
     }
     .hour {
         padding-top: 15px;
@@ -122,5 +166,10 @@ textarea {
     .time-block {
         text-align: center;
         border-radius: 15px;
+        height: 150px;
+    }
+    textarea {
+        height: 100px;
+        font-size: 20px;
     }
 }
