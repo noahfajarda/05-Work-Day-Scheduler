@@ -1,82 +1,111 @@
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 16px;
     line-height: 1;
+    /* fade background */
+    background: linear-gradient(-60deg, rgb(189, 134, 217), rgb(191, 113, 231), rgb(118, 57, 216), rgb(86, 73, 229), rgb(88, 144, 225), #23d5ab, #66f9d6);
+	background-size: 400% 400%;
+	animation: gradient 20s ease infinite;
+	height: 100vh;
 }
 /* use */
 textarea {
-background: transparent;
-border: none;
-resize: none;
-color: #000000;
-border-left: 1px solid black;
-padding: 10px;
+    background: transparent;
+    border: none;
+    resize: none;
+    color: #000000;
+    border-left: 1px solid black;
+    padding: 10px;
 }
 
 .jumbotron {
-text-align: center;
-background-color: transparent;
-color: black;
-border-radius: 0;
-border-bottom: 10px solid black;
-padding-bottom: 20px;
+    text-align: center;
+    background-color: transparent;
+    color: black;
+    border-radius: 0;
+    border-bottom: 10px solid black;
+    padding-bottom: 20px;
+}
+
+.jumbotron h1 {
+    text-shadow: 2px 2px white;
+    margin-bottom: 15px;
 }
 /* use */
 .description {
-white-space: pre-wrap;
+    white-space: pre-wrap;
 }
 /* use this to wrap */
 .time-block {
-text-align: center;
-border-radius: 15px;
+    text-align: center;
+    border-radius: 15px;
 }
 
 .row {
-white-space: pre-wrap;
-height: 85px;
-border-top: 1px solid white;
+    white-space: pre-wrap;
+    height: 85px;
+    border-top: 1px solid white;
 }
 
 .hour {
-background-color: #ffffff;
-color: #000000;
-border-top: 1px dashed #000000;
-padding-top: 30px;
+    background-color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    color: #000000;
+    border-top: 1px dashed #000000;
+    padding-top: 30px;
 }
 
 .past {
-background-color: #a7c1ef;
-color: black;
+    background-color: #beb7b7;
+    color: black;
 }
 
 .present {
-background-color: #b4eb70;
-color: black;
+    background-color: #C2E2F5;
+    color: black;
 }
 
 .future {
-background-color: #dd9e31;
-color: black;
+    background-color: #be93d4;
+    color: black;
 }
 
 .saveBtn {
-border-left: 1px solid black;
-border-top-right-radius: 15px;
-border-bottom-right-radius: 15px;
-background-color: #06aed5;
-color: white;
-cursor: pointer;
+    border-left: 1px solid black;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #06aed5;
+    color: white;
+    cursor: pointer;
 }
 
 .saveBtn i:hover {
-font-size: 20px;
-transition: all 0.3s ease-in-out;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
 }
 
 #textUponSave {
     margin: 0px;
     color: white;
     font-size: 30px;
+    letter-spacing: 1.5px;
+    /* fade text */
+    opacity: 0;
+    font-family: 'Raleway', sans-serif;
+    transition: 1s opacity;
+}
+
+/* fade background animation */
+@keyframes gradient {
+    0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 @media (max-width: 767px) {

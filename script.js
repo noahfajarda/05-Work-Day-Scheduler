@@ -44,13 +44,13 @@ saveButtons.on('click', function(event) {
     localStorage.setItem("time-" + elementID, currentTextArea.val());
 
     // display 'SAVED' text in header upon save
-    textUponSave.text('SAVED!').css('color', 'red');
-    var secondsLeft = 1;
+    textUponSave.css({'opacity': '1'}).text('SAVED!');
+    var secondsLeft = 2;
     var timerInterval = setInterval(function() {
         secondsLeft--;
         if (secondsLeft === 0) {
             clearInterval(timerInterval);
-            textUponSave.css('color', 'white').text('.');
+            textUponSave.css('opacity', '0');
         }
     }, 1000);
 });
