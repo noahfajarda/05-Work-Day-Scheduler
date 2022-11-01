@@ -24,9 +24,9 @@ for (var i in hourList) {
     if (hourToday == hourList[i]) {
         hourEl.addClass('present');
     } else if (hourToday >= hourList[i]) {
-        hourEl.addClass('future');
-    } else {
         hourEl.addClass('past');
+    } else {
+        hourEl.addClass('future');
     }
 
     // set text upon reload
