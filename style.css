@@ -1,12 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+}
 body {
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     line-height: 1;
     /* fade background */
     background: linear-gradient(-60deg, rgb(189, 134, 217), rgb(191, 113, 231), rgb(118, 57, 216), rgb(86, 73, 229), rgb(88, 144, 225), #23d5ab, #66f9d6);
-	background-size: 400% 400%;
+	background-size: 400% 415%;
 	animation: gradient 20s ease infinite;
 	height: 100vh;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
 }
 
 footer {
@@ -87,24 +99,22 @@ textarea {
 }
 
 .saveBtn {
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #06aed5;
-    padding-top: 32px;
     color: white;
+    font-size: 30px;
     cursor: pointer;
-    transition: color .3s;
 }
 
-.saveBtn:hover {
-    /* color: black;
-    background-image: linear-gradient(60deg, #E21143, #FFB03A);
+.saveBtn:hover .inner {
+    background-image: linear-gradient(60deg, #E21143, #FFC371);
     background-clip: text;
-
-    /* -webkit-background-clip: text; */
-
-    /* color: transparent;
-    background-color: #06aed5; */
+    -webkit-background-clip: text;
+    color: transparent;
+    background-color: transparent;
+    transition: color 0.8s;
 }
 
 #clearContainer {
@@ -174,7 +184,6 @@ to {
         margin-bottom: 32px;
     }
     .saveBtn {
-        padding-top: 30px;
         border-radius: 0px;
         text-align: center;
         font-size: 30px;
