@@ -6,8 +6,8 @@ This project is an attempt to create a work day scheduler to manage a list of ta
 
 ## Screenshot
 
-![App Screenshot](https://github.com/noahfajarda/05-work-day-scheduler/blob/main/Screenshot%202022-10-31%20at%2011.19.17%20PM.png)
-![App Screenshot](https://github.com/noahfajarda/05-work-day-scheduler/blob/main/Screenshot%202022-10-31%20at%2011.20.17%20PM.png)
+![App Screenshot](https://github.com/noahfajarda/05-work-day-scheduler/blob/main/assets/screenshots/Screenshot%202022-10-31%20at%2011.19.17%20PM.png)
+![App Screenshot](https://github.com/noahfajarda/05-work-day-scheduler/blob/main/assets/screenshots/Screenshot%202022-10-31%20at%2011.20.17%20PM.png)
 
 ## Link to Deployed Application
 
