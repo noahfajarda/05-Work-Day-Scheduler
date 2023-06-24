@@ -11,4 +11,4 @@ This project is an attempt to create a work day scheduler to manage a list of ta
 
 ## Link to Deployed Application
 
-https://noahfajarda.github.io/05-work-day-scheduler/
+https://noahfajarda.github.io/05-Work-Day-Scheduler/
